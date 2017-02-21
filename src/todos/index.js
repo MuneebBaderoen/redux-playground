@@ -14,13 +14,13 @@ class TodosComponent extends Component {
   	// Pressing enter in the textbox will fire onSave, and add the todo to state
     return (
       <div>
-    	<TodoTextInput 
-		  onSave={this.props.actions.addTodo}
-		  />
+      	<TodoTextInput 
+  		    onSave={this.props.actions.addTodo}
+  		    />
 
-    	{this.props.todos.map((todo, index) => {
-	 	  return <div key={index}>{todo}</div>
-    	})}
+      	{this.props.todos.map((todo, index) => {
+          return <div key={index}>{todo}</div>
+      	})}
       </div>
     )
   }

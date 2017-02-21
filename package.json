@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --hot"
+    "start": "node ./server.js"
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +17,6 @@
     "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-0": "^6.22.0",
-    "babel-preset-stage-2": "^6.22.0",
     "babel-runtime": "^6.23.0",
     "html-webpack-plugin": "^2.28.0",
     "react-dom": "^15.4.2",
@@ -27,8 +26,8 @@
     "redux-devtools": "^3.0.1",
     "redux-devtools-dock-monitor": "^1.0.1",
     "redux-devtools-log-monitor": "^1.0.2",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.1"
+    "webpack": "^1.9.11",
+    "webpack-dev-server": "^1.9.0"
   },
   "dependencies": {
     "react": "^15.4.2",

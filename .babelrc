@@ -1,24 +1,11 @@
 {
-    "presets": [
-        "latest",
-        "stage-0",
-        "react"
-    ],
-    "plugins": ["transform-react-jsx"],
-    "env": {
-        "development": {
-            "plugins": [
-                ["react-transform", {
-                    "transforms": [{
-                        "transform": "react-transform-hmr",
-                        "imports": ["react"],
-                        "locals": ["module"]
-                    }, {
-                        "transform": "react-transform-catch-errors",
-                        "imports": ["react", "redbox-react"]
-                    }]
-                }]
-            ]
-        }
-    }
+  "presets": ["latest", "stage-0", "react"],
+  "plugins": ["react-hot-loader/babel", ["react-transform", {
+        "transforms": [{
+          "transform": "react-transform-catch-errors",
+          "imports": [
+            "react", "redbox-react"
+          ]
+        }]
+      }]]
 }
